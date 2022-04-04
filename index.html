@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Slideshow container -->
+    <div class="slidesContainer">
+      <!-- Full-width images with number and caption text -->
+      <picture class="slides photo">
+        <img src="img/colosseum-792202_1920.jpg" />
+      </picture>
+
+      <picture class="slides photo">
+        <img src="img/italy-1633430_1920.jpg" />
+      </picture>
+
+      <picture class="slides photo">
+        <img src="img/moor-fountain-4282602_1920.jpg" />
+      </picture>
+
+      <picture class="slides photo">
+        <img src="img/rome-1968149_1920.jpg" />
+      </picture>
+
+      <picture class="slides photo">
+        <img src="img/rome-3862644_1920.jpg" />
+      </picture>
+
+      <picture class="slides photo">
+        <img src="img/rome-6207755_1920.jpg" />
+      </picture>
+
+      <picture class="slides photo">
+        <img src="img/trinita-dei-monti-5236301_1920.jpg" />
+      </picture>
+
+      <!-- ****************Fleche precedent _ suivante ************* -->
+      <a class="prev" onclick="suivPred(-1)">&#10094;</a>
+      <a class="next" onclick="suivPred(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- ***********************Indicateur Dot Slides*******************  -->
+    <div style="text-align: center">
+      <span class="dot" onclick="slideActuelleDot(1)"></span>
+      <span class="dot" onclick="slideActuelleDot(2)"></span>
+      <span class="dot" onclick="slideActuelleDot(3)"></span>
+      <span class="dot" onclick="slideActuelleDot(4)"></span>
+      <span class="dot" onclick="slideActuelleDot(5)"></span>
+      <span class="dot" onclick="slideActuelleDot(6)"></span>
+      <span class="dot" onclick="slideActuelleDot(7)"></span>
+      <button class="btn">Play</button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
